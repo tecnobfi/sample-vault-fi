@@ -39,6 +39,4 @@ JWT_SECRET=tu_clave_secreta_super_segura
 NODE_ENV=testing
 EOF
 
-echo "🚀 Configuración de entorno completada con éxito."
-
-cd backend
+echo "🚀 Configuración de entorno completada con éxito. Ejectura en la consola: node backend/server.js"
