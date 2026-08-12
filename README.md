@@ -10,7 +10,7 @@
 * **Reproductor Integrado:** Escucha tus sonidos directamente desde la biblioteca mediante una interfaz minimalista.
 * **Arquitectura Limpia:** Separación total de responsabilidades entre controladores, servicios y utilidades.
 * **Frontend "Zero innerHTML":** Manipulación del DOM 100% nativa para máxima seguridad y rendimiento.
-* **Sostenibilidad de Software:** Código optimizado siguiendo principios de eficiencia en el consumo de recursos (inspirado en el modelo **GREENSOFT**).
+* **Sostenibilidad de Software con Software Libre:** Código optimizado siguiendo principios de eficiencia en el consumo de recursos (inspirado en el modelo **GREENSOFT**).
 
 ## 🛠️ Tecnologías Utilizadas
 
@@ -18,6 +18,7 @@
 * **Node.js & Express:** Servidor robusto y escalable.
 * **Multer:** Gestión eficiente de subida de archivos binarios.
 * **MySQL/MariaDB:** Persistencia de metadatos de forma relacional.
+* **JSON Web Token (JWT):** Autenticación y gestión de sesión. 
 
 ### Frontend
 * **Vanilla JavaScript:** Lógica pura sin dependencias de frameworks pesados.
