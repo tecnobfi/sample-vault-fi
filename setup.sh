@@ -21,12 +21,13 @@ else
 fi
 
 # 5. Configurar Node.js (La imagen base ya trae nvm, instalamos v24)
-nvm install 24
-nvm use 24
+#nvm install 24
+#nvm use 24
 
 # 6. Moverse a backend, instalar dependencias y crear .env
 cd backend
 npm install
+npm update
 
 echo "Creando archivo .env..."
 cat <<EOF > .env
