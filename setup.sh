@@ -26,7 +26,7 @@ fi
 
 # 6. Moverse a backend, instalar dependencias y crear .env
 cd backend
-npm install
+npm install express mysql2 cors multer jsonwebtoken bcrypt dotenv
 npm update
 
 echo "Creando archivo .env..."
@@ -39,5 +39,7 @@ DB_NAME=samplevault
 JWT_SECRET=tu_clave_secreta_super_segura
 NODE_ENV=production
 EOF
+
+cp .env ../.
 
 echo "🚀 Configuración de entorno completada con éxito."
