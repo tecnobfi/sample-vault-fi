@@ -1,6 +1,6 @@
 {
     "name": "Sample Vault Dev Environment",
-    "image": "mcr.microsoft.com/devcontainers/javascript-node:22-bookworm",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:24-bookworm",
     
     "features": {
         "ghcr.io/devcontainers/features/common-utils:1": {
@@ -9,7 +9,7 @@
         "ghcr.io/devcontainers/features/mariadb:1": {} 
     },
 
-    "postCreateCommand": "chmod +x ./.devcontainer/setup.sh && ./.devcontainer/setup.sh",
+    "postCreateCommand": "./.devcontainer/setup.sh",
 
     "customizations": {
         "vscode": {
