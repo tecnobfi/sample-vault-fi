@@ -9,8 +9,6 @@
         "ghcr.io/devcontainers/features/mariadb:1": {} 
     },
 
-    "postCreateCommand": "chmod +x setup.sh && bash setup.sh",
-
     "customizations": {
         "vscode": {
             "extensions": [
