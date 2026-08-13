@@ -1,7 +1,7 @@
 /**
  * Test: GET /api/admin/users (Requiere Login Admin)
  */
- testUtils.createTestButton("Test Admin: Listar Usuarios con Login Admin Correcto", async (btn) => {
+ testUtils.createTestButton("Test Admin: Listar Usuarios de Sistema con Login Admin Correcto", async (btn) => {
     // Primero hacemos un login rápido como admin para obtener el token adecuado
     const loginRes = await fetch('/api/auth/login', {
         method: 'POST',

@@ -16,27 +16,9 @@
  }
 
 /**
- * Test: GET /api/samples/my-samples
- */
- testUtils.createTestButton("Test Listar Mis Samples", async (btn) => {
-    // 1. Asegurar y guardar una sesión válida
-    await okLogin();
-    const token = localStorage.getItem('test_token');
-    
-    // 2. Realizar la petición
-    const response = await fetch('/api/samples/my-samples', {
-        headers: { 'Authorization': `Bearer ${token}` }
-    });
-    
-    const data = await response.json();
-    testUtils.log(data);
-    if (response.ok) testUtils.setSuccess(btn);
-});
-
-/**
  * Test: POST /api/samples/upload (Simulado)
  */
-testUtils.createTestButton("Test Subir Sample (Simulado)", async (btn) => {
+ testUtils.createTestButton("Test Subir Sample (Simulado)", async (btn) => {
     // 1. Asegurar y guardar una sesión válida
     await okLogin();
     const token = localStorage.getItem('test_token');
@@ -57,6 +39,24 @@ testUtils.createTestButton("Test Subir Sample (Simulado)", async (btn) => {
         body: formData
     });
 
+    const data = await response.json();
+    testUtils.log(data);
+    if (response.ok) testUtils.setSuccess(btn);
+});
+
+/**
+ * Test: GET /api/samples/my-samples
+ */
+ testUtils.createTestButton("Test Listar Mis Samples", async (btn) => {
+    // 1. Asegurar y guardar una sesión válida
+    await okLogin();
+    const token = localStorage.getItem('test_token');
+    
+    // 2. Realizar la petición
+    const response = await fetch('/api/samples/my-samples', {
+        headers: { 'Authorization': `Bearer ${token}` }
+    });
+    
     const data = await response.json();
     testUtils.log(data);
     if (response.ok) testUtils.setSuccess(btn);
